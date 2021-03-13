@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+}
+.container .form-container{
+    position: relative;
+    width: 50vw;
+    height: 60vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    transition: transform .5s;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.container .form-container:hover{
+    transform: translateY(-10px);
+}
+.container .form-image{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    color: #fff;
+    background: linear-gradient(#7ed6df, #e056fd);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%);
+}
+.container .form-image .text{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding: 30px;
+    width: 60%;
+}
+.container .form-image .text h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.form-body .header{
+    margin: 0px 60px;
+}
+.form-body .header p{
+    font-size: 14px;
+}
+.form-body .header h2{
+    margin-bottom: 20px;
+}
+.form-body .header a{
+    text-decoration: none;
+    color: #7ed6df;
+}
+.form-group{
+    margin: 30px 60px;
+}
+.form-group .input-group{
+    width: 300px;
+    margin: 15px 0;
+}
+.form-group .input-group input[type="text"],
+.form-group .input-group input[type="password"]{
+    width: 100%;
+    padding: 8px 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form-group .input-group.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.form-group .input-group.flex a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+}
+.form-group .input-group.flex .remember{
+    display: flex;
+    align-items: center;
+}
+.form-group .input-group.flex .remember input{
+    margin-right: 5px;
+}
+.form-group .input-group button{
+    background: #7ed6df;
+    width: 150px;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+.form-group .input-group button:hover{
+    background: none;
+    border: 1px solid #7ed6df;
+    color: #7ed6df;
+}
+.form-group .input-group.right{
+    text-align: right;
+}
